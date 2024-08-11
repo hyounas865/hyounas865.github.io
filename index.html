@@ -113,9 +113,10 @@
 
 <!-- ======= Certificate Section ======= -->
 <style>
-	#fh5co-certificates .section-title {
+    /* General Styles */
+    #fh5co-certificates .section-title {
         text-align: center;
-        margin-bottom: 100px;
+        margin-bottom: 50px; /* Reduced margin for better spacing on all devices */
     }
    
     #fh5co-certificates .portfolio-item img {
@@ -127,12 +128,12 @@
     }
 
     #fh5co-certificates .portfolio-item {
-        margin-bottom: 30px;
+        margin-bottom: 20px; /* Reduced margin for better spacing */
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 250px; /* Set a consistent height for each column */
+        height: auto; /* Allow height to adjust based on content */
     }
 
     #fh5co-certificates .row {
@@ -150,10 +151,29 @@
         display: flex;
         justify-content: center;
     }
-	.portfolio-item img:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-}
+
+    #fh5co-certificates .portfolio-item img:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+    }
+
+    /* Mobile Styles */
+    @media only screen and (max-width: 767px) {
+        #fh5co-certificates .section-title {
+            margin-bottom: 30px; /* Reduced margin for mobile */
+        }
+
+        #fh5co-certificates .col-lg-4,
+        #fh5co-certificates .col-md-6 {
+            flex: 1 1 45%; /* Adjust width to fit two items per row */
+            max-width: 45%;
+            padding: 0 10px; /* Reduced padding for mobile */
+        }
+        
+        #fh5co-certificates .portfolio-item {
+            height: auto; /* Allow height to adjust on mobile */
+        }
+    }
 </style>
 
 <section id="fh5co-certificates" class="portfolio section-bg">
@@ -308,10 +328,9 @@
 			</div>
 			<div class="row">
 				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(images/portfolio-1.jpg);">
+					<a href="#" class="work" style="background-image: url('images/image1-02.jpg');">
 						<div class="desc">
-							<h3>Project Name</h3>
-							<span>Illustration</span>
+							<h3>Enhancing Customer Retention</h3>
 						</div>
 					</a>
 				</div>
