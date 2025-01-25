@@ -3200,7 +3200,7 @@ img.u-pull-left {
     justify-content : center;
     align-items     : center;
     padding-top     : calc(16vh + var(--header-height));
-    padding-bottom  : var(--vspace-1);
+    padding-bottom  : var(--vspace-3);
 }
 
 .intro-content .text-huge-title {
@@ -3433,12 +3433,12 @@ img.u-pull-left {
  * ## about expertise
  * -------------------------------------------------------------------- */
 .about-expertise {
-    padding-top : calc(4 * var(--space));
+    padding-top : calc(6 * var(--space));
 }
 
 .about-expertise .skills-list {
     list-style  : none;
-    margin-top: calc(0.1 * var(--vspace-1));
+    margin-top  : var(--vspace-1);
     margin-left : 0;
 }
 
@@ -4288,4 +4288,43 @@ img.u-pull-left {
 }
 .chart span strong {
     display: block;
+}
+
+
+/* Portfolio Container */
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
+    gap: 20px; /* Space between items */
+}
+
+/* Portfolio Items */
+.portfolio-item {
+    width: 100%;
+    overflow: hidden; /* Prevent content overflow */
+}
+
+/* Responsive Images */
+.portfolio-item img {
+    width: 100%; /* Ensure the image takes the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Optional: Makes images look uniform */
+}
+
+/* Media Queries for Responsive Layout */
+
+/* For tablets and medium screens (768px or smaller) */
+@media (max-width: 768px) {
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr); /* Switch to 2 columns */
+        gap: 15px; /* Reduce spacing */
+    }
+}
+
+/* For mobile and small screens (480px or smaller) */
+@media (max-width: 480px) {
+    .portfolio-container {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 10px; /* Further reduce spacing */
+    }
 }
