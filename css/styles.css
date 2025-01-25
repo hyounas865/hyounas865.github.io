@@ -3200,7 +3200,7 @@ img.u-pull-left {
     justify-content : center;
     align-items     : center;
     padding-top     : calc(16vh + var(--header-height));
-    padding-bottom  : var(--vspace-3);
+    padding-bottom  : var(--vspace-1);
 }
 
 .intro-content .text-huge-title {
@@ -3433,12 +3433,12 @@ img.u-pull-left {
  * ## about expertise
  * -------------------------------------------------------------------- */
 .about-expertise {
-    padding-top : calc(6 * var(--space));
+    padding-top : calc(4 * var(--space));
 }
 
 .about-expertise .skills-list {
     list-style  : none;
-    margin-top  : var(--vspace-1);
+    margin-top: calc(0.1 * var(--vspace-1));
     margin-left : 0;
 }
 
