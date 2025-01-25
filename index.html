@@ -1,544 +1,909 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html class="no-js ss-preload" lang="en">
+
 <head>
-	<html lang="en"></html>
+
+    <!--- basic page needs
+    ================================================== -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Hamza Younas - Portfolio</title>
+    <title>Hamza</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Welcome to Hamza Younas's Portfolio">
-    <meta name="keywords" content="Hamza Younas, Portfolio, Data Science, projects, ML Engineer, Computer Vision, Scikit-learn">
-    <meta name="author" content="Hamza Younas">
-    
-    <!-- Facebook and Twitter integration -->
-    <meta property="og:title" content="Hamza Younas's Portfolio"/>
-    <meta property="og:image" content=""/>
-    <meta property="og:url" content=""/>
-    <meta property="og:site_name" content=""/>
-    <meta property="og:description" content=""/>
-    <meta name="twitter:title" content="" />
-    <meta name="twitter:image" content="" />
-    <meta name="twitter:url" content="" />
-    <meta name="twitter:card" content="" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-    
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- Icomoon Icon Fonts-->
-    <link rel="stylesheet" href="css/icomoon.css">
-    <!-- Bootstrap  -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    
-    <!-- Theme style  -->
-    <link rel="stylesheet" href="css/style.css">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <!-- Modernizr JS -->
-    <script src="js/modernizr-2.6.2.min.js"></script>
-    <!-- FOR IE9 below -->
-    <!--[if lt IE 9]>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    
-<div class="fh5co-loader"></div>
 
-<div id="page">    
-<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image:url(images/cover_bg_3.jpg);" data-stellar-background-ratio="0.5">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-center">
-                <div class="display-t js-fullheight">
-                    <div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-                        <div class="profile-thumb" style="background: url(images/user-3.webp);"></div>
-                        <h1><span>Hamza Younas</span></h1>
-                        <h2><span>Juggling Data, Code, and Bad Jokes Simultaneously</span></h2>
-                        <h3><span>Data Scientist | ML Engineer</span></h3>
-                        <h3><span>Computer Vision</span></h3>
-                        <p>
-                            <ul class="fh5co-social-icons">
-                                <li><a href="https://www.linkedin.com/in/hamza-younas-5a0538244"><i class="icon-linkedin2"></i></a></li>
-                                <li><a href="https://github.com/hyounas865"><i class="icon-github2"></i></a></li>
-                                <li><a href="https://x.com/hyounas0026"><i class="icon-twitter2"></i></a></li>
-                                <li><a href="https://medium.com/@hyounas0026"><i class="fab fa-medium"></i></a></li>
-                            </ul>
+<body id="top">
+
+
+    <!-- # preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+        </div>
+    </div>
+
+
+    <!-- # page wrap
+    ================================================== -->
+    <div class="s-pagewrap">
+
+        <div class="circles">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+
+        <!-- ## site header 
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="header-mobile">
+                <span class="mobile-home-link"><a href="index.html">Hamza.</a></span>
+                <a class="mobile-menu-toggle" href="#0"><span>Menu</span></a>
+            </div>
+
+            <div class="row wide main-nav-wrap">
+                <nav class="column lg-12 main-nav">
+                    <ul>
+                        <li><a href="index.html" class="home-link">Hamza.</a></li>
+                        <li class="current"><a href="#intro" class="smoothscroll">Intro</a></li>
+                        <li><a href="#about" class="smoothscroll">About Me</a></li>
+                        <li><a href="#works" class="smoothscroll">projects</a></li>
+                        <li><a href="#contact" class="smoothscroll">Say Hello</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header> <!-- end s-header -->
+
+
+        <!-- ## main content
+        ==================================================- -->
+        <main class="s-content">
+
+
+            <!-- ### intro
+            ================================================== -->
+            <section id="intro" class="s-intro target-section">
+
+                <div class="row intro-content wide">
+
+                    <div class="column">
+                        <div class="text-pretitle with-line">
+                            Hello World
+                        </div>
+
+                        <h1 class="text-huge-title">
+                            I am Hamza Younas, <br>
+                            a data scientist <br>
+                            & machine learning <br>
+                            engineer based <br>
+                            in Lahore.
+                        </h1>
+                    </div>
+
+                    <ul class="intro-social">
+                        <li><a href="https://github.com/hyounas865">Github</a></li>
+                        <li><a href="https://www.linkedin.com/in/hamza-younas-5a0538244">Linkedin</a></li>
+                        <li><a href="https://x.com/hyounas0026">Twitter</a></li>
+                        <li><a href="https://medium.com/@hyounas0026">medium</a></li>
+                    </ul>
+
+                </div> <!-- end intro content -->
+
+                <a href="#about" class="intro-scrolldown smoothscroll">
+                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        fill-rule="evenodd" clip-rule="evenodd">
+                        <path
+                            d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z" />
+                    </svg>
+                </a>
+
+            </section> <!-- end s-intro -->
+
+
+            <!-- ### about
+            ================================================== -->
+            <section id="about" class="s-about target-section">
+
+
+                <div class="row about-info wide" data-animate-block>
+
+                    <div class="column lg-6 md-12 about-info__pic-block">
+                        <img src="./images/about-photo.jpg" alt="yuj" class="about-info__pic" data-animate-el>
+                    </div>
+
+                    <div class="column lg-6 md-12">
+                        <div class="about-info__text">
+                            <h2 class="text-pretitle with-line" data-animate-el>
+                                Hello There!
+                            </h2>
+                            <p class="attention-getter" data-animate-el>
+                                As a Data Science and ML Engineer, I specialize in developing advanced machine learning
+                                models, focusing on computer vision projects. I excel in crafting efficient code for the
+                                ML pipeline, particularly in object detection and image classification. Rigorously
+                                assessing model performance with metrics like accuracy and precision ensures our
+                                solutions are effective and efficient.</p>
+                            <p class="attention-getter" data-animate-el>
+                                In my role, I deploy ML models into production, ensuring seamless integration and
+                                scalability. I optimize inference speed and memory efficiency, adept at resolving
+                                performance bottlenecks to enhance system speed and resource utilization.
+                            <p class="attention-getter" data-animate-el>
+                                For my Final Year Project (FYP), I specialized in a web-based project for pneumonia
+                                detection in chest X-rays using Convolutional Neural Networks (CNNs). I leveraged
+                                advanced CNN architectures, including ResNet, VGG, Inception, and DenseNet, to achieve
+                                optimal diagnostic accuracy. This project enabled me to deepen my expertise in deep
+                                learning, particularly in medical imaging, and contribute to innovation in healthcare
+                                technology by delivering a reliable and efficient solution for pneumonia diagnosis.
+                                <a href="images/documents/Hamza Younas Resume.pdf" class="btn btn--medium u-fullwidth"
+                                    data-animate-el>Download Resume</a>
+
+                        </div>
+                    </div>
+                </div> <!-- about-info -->
+
+                <div class="row about-expertise" data-animate-block>
+                    <div class="column lg-12">
+
+                        <h2 class="text-pretitle" data-animate-el>Expertise</h2>
+                        <ul class="skills-list h1" data-animate-el>
+                            <li>Machine Learning</li>
+                            <li>Computer Vision</li>
+                            <li>Data Analysis</li>
+                            <li>Feature Engineering</li>
+                            <li>Statistical Analysis</li>
+                            <li>Cloud Computing for AI</li>
+                        </ul>
+
+                        <div id="fh5co-skills" class="animate-box animated fadeInUp animated-fast">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12  col-md-offset-2 text-center fh5co-heading">
+                                        <h2 style="margin-bottom: 6rem;">Technical Skills</h2>
+                                    </div>
+                                </div>
+                                <div class="row row-pb-md">
+                                    <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                                        <div class="chart" data-percent="75">
+                                            <span><strong>PYTHON</strong>75%</span><canvas height="240" width="240"
+                                                style="height: 160px; width: 160px;"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                                        <div class="chart" data-percent="55"><span><strong>SQL</strong>55%</span><canvas
+                                                height="240" width="240" style="height: 160px; width: 160px;"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                                        <div class="chart" data-percent="75">
+                                            <span><strong>Tensorflow</strong>75%</span><canvas height="240" width="240"
+                                                style="height: 160px; width: 160px;"></canvas>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                                        <div class="chart" data-percent="79"><span><strong>Sci-kit
+                                                    Learn</strong>74%</span><canvas height="240" width="240"
+                                                style="height: 160px; width: 160px;"></canvas></div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                                        <div class="chart" data-percent="85">
+                                            <span><strong>Pandas</strong>79%</span><canvas height="240" width="240"
+                                                style="height: 160px; width: 160px;"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                                        <div class="chart" data-percent="90">
+                                            <span><strong>Numpy</strong>70%</span><canvas height="240" width="240"
+                                                style="height: 160px; width: 160px;"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                                        <div class="chart" data-percent="65">
+                                            <span><strong>Hadoop</strong>65%</span><canvas height="240" width="240"
+                                                style="height: 160px; width: 160px;"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-xs-12 text-center">
+                                        <div class="chart" data-percent="74"><span><strong>Statistical
+                                                    Analysis</strong>74%</span><canvas height="240" width="240"
+                                                style="height: 160px; width: 160px;"></canvas></div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="progress-wrap">
+                                            <h3><span class="name-left">Python</span><span
+                                                    class="value-right">75%</span></h3>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped active" role="progressbar"
+                                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                                    style="width:75%">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progress-wrap">
+                                            <h3><span class="name-left">SQL</span><span class="value-right">55%</span>
+                                            </h3>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped active" role="progressbar"
+                                                    aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"
+                                                    style="width:55%">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progress-wrap">
+                                            <h3><span class="name-left">TensorFlow</span><span
+                                                    class="value-right">75%</span></h3>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped active" role="progressbar"
+                                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                                    style="width:75%">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progress-wrap">
+                                            <h3><span class="name-left">Scikit-Learn</span><span
+                                                    class="value-right">74%</span></h3>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped active" role="progressbar"
+                                                    aria-valuenow="74" aria-valuemin="0" aria-valuemax="100"
+                                                    style="width:74%">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progress-wrap">
+                                            <h3><span class="name-left">Pandas</span><span
+                                                    class="value-right">79%</span></h3>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped active" role="progressbar"
+                                                    aria-valuenow="79" aria-valuemin="0" aria-valuemax="100"
+                                                    style="width:79%">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progress-wrap">
+                                            <h3><span class="name-left">Numpy</span><span class="value-right">70%</span>
+                                            </h3>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped active" role="progressbar"
+                                                    aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                                                    style="width:70%">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progress-wrap">
+                                            <h3><span class="name-left">Hadoop</span><span
+                                                    class="value-right">65%</span></h3>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped active" role="progressbar"
+                                                    aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
+                                                    style="width:65%">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="progress-wrap">
+                                            <h3><span class="name-left">Statistical Analysis</span><span
+                                                    class="value-right">74%</span></h3>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped active" role="progressbar"
+                                                    aria-valuenow="74" aria-valuemin="0" aria-valuemax="100"
+                                                    style="width:74%">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progress-wrap">
+                                            <h3><span class="name-left">Python/R/SQL</span><span
+                                                    class="value-right">70%</span></h3>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped active" role="progressbar"
+                                                    aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                                                    style="width:70%">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progress-wrap">
+                                            <h3><span class="name-left">Pandas/Numpy</span><span
+                                                    class="value-right">74%</span></h3>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped active" role="progressbar"
+                                                    aria-valuenow="74" aria-valuemin="0" aria-valuemax="100"
+                                                    style="width:74%">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progress-wrap">
+                                            <h3><span class="name-left">Matplotlib/Seaborn</span><span
+                                                    class="value-right">80%</span></h3>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped active" role="progressbar"
+                                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                                    style="width:80%">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progress-wrap">
+                                            <h3><span class="name-left">Scikit-learn/Keras/TensorFlow</span><span
+                                                    class="value-right">70%</span></h3>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped active" role="progressbar"
+                                                    aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                                                    style="width:70%">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progress-wrap">
+                                            <h3><span class="name-left">NLP/Computer Vision</span><span
+                                                    class="value-right">75%</span></h3>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped active" role="progressbar"
+                                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                                    style="width:75%">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progress-wrap">
+                                            <h3><span class="name-left">AWS/Azure</span><span
+                                                    class="value-right">55%</span></h3>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped active" role="progressbar"
+                                                    aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"
+                                                    style="width:55%">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progress-wrap">
+                                            <h3><span class="name-left">Git/GitHub/Jupyter NB</span><span
+                                                    class="value-right">90%</span></h3>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped active" role="progressbar"
+                                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+                                                    style="width:90%">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progress-wrap">
+                                            <h3><span class="name-left">Soft Skills</span><span
+                                                    class="value-right">85%</span></h3>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped active" role="progressbar"
+                                                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
+                                                    style="width:85%">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="row about-expertise" data-animate-block>
+                            <div class="column lg-12">
+
+                                <h2 class="text-pretitle" data-animate-el>Certificates</h2>
+
+                                <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200"
+                                    style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 60px;">
+                                    <div class="portfolio-item filter-card">
+                                        <img src="./images/certificates/AWS-ZTU7LC8DOQ.jpeg" class="img-fluid" alt="">
+                                    </div>
+
+                                    <div class="portfolio-item filter-card">
+                                        <img src="./images/certificates/Coursera 4JNUZNFQDNXK_page-0001.jpg"
+                                            class="img-fluid" alt="">
+                                    </div>
+
+                                    <div class="portfolio-item filter-card">
+                                        <img src="./images/certificates/Coursera ZQR8YT93ZQ.png" class="img-fluid"
+                                            alt="">
+                                    </div>
+
+                                    <div class="portfolio-item filter-card">
+                                        <img src="./images/certificates/Coursera NH8L336SC8LD.jpg" class="img-fluid"
+                                            alt="">
+                                    </div>
+
+                                    <div class="portfolio-item filter-card">
+                                        <img src="./images/certificates/Coursera YEELIJ7ZEMDO.jpg" class="img-fluid"
+                                            alt="">
+                                    </div>
+
+                                    <div class="portfolio-item filter-card">
+                                        <img src="./images/certificates/Coursera ZQX3CZBKSKJQ.jpg" class="img-fluid"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+            </section> <!-- end s-about -->
+
+
+            <!-- ### works
+            ================================================== -->
+            <section id="works" class="s-works target-section">
+
+
+                <div class="row works-portfolio">
+
+                    <div class="column lg-12" data-animate-block>
+
+                        <h2 class="text-pretitle" data-animate-el>
+                            Recent Works
+                        </h2>
+                        <p class="h1" data-animate-el>
+                            Here are some of my favorite projects I have done lately. Feel free to check them out.
                         </p>
+
+                        <ul class="folio-list row block-lg-one-half block-stack-on-1000">
+
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-01">
+                                    <div class="folio-list__item-pic">
+                                        <img src="images/portfolio/image1-02 - Copy.webp" alt="Portfolio item image">
+                                    </div>
+
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Traditional Machine Learning.
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Enhancing Customer Retention.
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="#" title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-02">
+                                    <div class="folio-list__item-pic">
+                                        <img src="images/portfolio/detection.png" alt="Portfolio item image">
+                                    </div>
+
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Computer vision
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Automobiles Detection.
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="#" title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-03">
+                                    <div class="folio-list__item-pic">
+                                        <img src="images/portfolio/XRAY.webp" alt="Portfolio item image">
+                                    </div>
+
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Website
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Pneumonia Detection Using Deep Learning
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="#" title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-04">
+                                    <div class="folio-list__item-pic">
+                                        <img src="images/portfolio/islamabad.jpg" alt="Portfolio item image">
+                                    </div>
+
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Website
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Islamabad House Price Prediction.
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="#" title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-05">
+                                    <div class="folio-list__item-pic">
+                                        <img src="images/portfolio/price-est.webp" alt="Portfolio item image">
+                                    </div>
+
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Machine Learning
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            California House Price Estimation.
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="#" title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-06">
+                                    <div class="folio-list__item-pic">
+                                        <img src="images/portfolio/image4.webp" alt="Portfolio item image">
+                                    </div>
+
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            NLP
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Emotion Tweet Classifier.
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="#" title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z"
+                                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </li> <!--end folio-list__item -->
+
+                        </ul> <!-- end folio-list -->
+
+                    </div> <!-- end column -->
+
+
+                    <!-- Modal Templates Popup
+                    -------------------------------------------- -->
+                    <div id="modal-01" hidden>
+                        <div class="modal-popup">
+                            <img src="images/portfolio/gallery/g-fuji.jpg" alt="">
+
+                            <div class="modal-popup__desc">
+                                <h5>Retro Camera</h5>
+                                <p>Odio soluta enim quos sit asperiores rerum rerum repudiandae cum. Vel voluptatem
+                                    alias qui assumenda iure et expedita voluptatem. Ratione officiis quae.</p>
+                                <ul class="modal-popup__cat">
+                                    <li>Branding</li>
+                                    <li>Product Design</li>
+                                </ul>
+                            </div>
+
+                            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+                        </div>
+                    </div> <!-- end modal -->
+
+                    <div id="modal-02" hidden>
+                        <div class="modal-popup">
+                            <img src="images/portfolio/gallery/g-lamp.jpg" alt="">
+
+                            <div class="modal-popup__desc">
+                                <h5>The White Lamp</h5>
+                                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+                                    auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                                <ul class="modal-popup__cat">
+                                    <li>Branding</li>
+                                </ul>
+                            </div>
+
+                            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+                        </div>
+                    </div> <!-- end modal -->
+
+                    <div id="modal-03" hidden>
+                        <div class="modal-popup">
+                            <img src="images/portfolio/gallery/g-rucksack.jpg" alt="">
+
+                            <div class="modal-popup__desc">
+                                <h5>Rucksuck</h5>
+                                <p>Exercitationem reprehenderit quod explicabo consequatur aliquid ut magni ut. Deleniti
+                                    quo corrupti illum velit eveniet ratione necessitatibus ipsam mollitia.</p>
+                                <ul class="modal-popup__cat">
+                                    <li>Product Design</li>
+                                </ul>
+                            </div>
+
+                            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+                        </div>
+                    </div> <!-- end modal -->
+
+                    <div id="modal-04" hidden>
+                        <div class="modal-popup">
+                            <img src="images/portfolio/islamabad.jpg" alt="">
+
+                            <div class="modal-popup__desc">
+                                <h5>Since Day One</h5>
+                                <p>Dolores velit qui quos nobis. Aliquam delectus voluptas quos possimus non voluptatem
+                                    voluptas voluptas. Est doloribus eligendi porro doloribus voluptatum.</p>
+                                <ul class="modal-popup__cat">
+                                    <li>Website</li>
+                                </ul>
+                            </div>
+
+                            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+                        </div>
+                    </div> <!-- end modal -->
+
+                    <div id="modal-05" hidden>
+                        <div class="modal-popup">
+
+                            <img src="images/portfolio/gallery/g-sanddunes.jpg" alt="">
+
+                            <div class="modal-popup__desc">
+                                <h5>Sand Dunes</h5>
+                                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+                                    auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                                <ul class="modal-popup__cat">
+                                    <li>Illustration</li>
+                                </ul>
+                            </div>
+
+                            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+                        </div>
+                    </div> <!-- end modal -->
+
+                    <div id="modal-06" hidden>
+                        <div class="modal-popup">
+                            <img src="images/portfolio/gallery/g-minimalismo.jpg" alt="">
+
+                            <div class="modal-popup__desc">
+                                <h5>Minimalismo</h5>
+                                <p>Quisquam vel libero consequuntur autem voluptas. Qui aut vero. Omnis fugit mollitia
+                                    cupiditate voluptas. Aenean sollicitudin, lorem quis bibendum auctor.</p>
+                                <ul class="modal-popup__cat">
+                                    <li>Branding</li>
+                                    <li>Product Design</li>
+                                </ul>
+                            </div>
+
+                            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+                        </div>
+                    </div> <!-- end modal -->
+
+                </div> <!-- end works-portfolio -->
+
+
+                
+            </section> <!-- end s-works -->
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="fh5co-blog animate-box">
+                        <a href="https://medium.com/@hyounas0026/pandas-on-a-diet-lossless-compression-techniques-for-dataframes-bcc9db87fbcb"
+                            class="blog-bg" style="background-image: url(images/portfolio-1.webp);"></a>
+                        <div class="blog-text">
+                            <span class="posted_on">Jul. 28th 2024</span>
+                            <h3><a
+                                    href="https://medium.com/@hyounas0026/pandas-on-a-diet-lossless-compression-techniques-for-dataframes-bcc9db87fbcb">Pandas
+                                    on a Diet: Lossless Compression Techniques for DataFrames</a></h3>
+                            <p>The compression conundrum how to shrink your DataFrames without sacrificing data quality.
+                            </p>
+                            <ul class="stuff">
+                                <li><i class="icon-heart2"></i>73</li>
+                                <li><i class="icon-eye2"></i>308</li>
+                                <li><a
+                                        href="https://medium.com/@hyounas0026/pandas-on-a-diet-lossless-compression-techniques-for-dataframes-bcc9db87fbcb">Read
+                                        More<i class="icon-arrow-right22"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="fh5co-blog animate-box">
+                        <a href="https://medium.com/@hyounas0026/datas-extraordinary-impact-and-influence-d1a1d1f46a90"
+                            class="blog-bg" style="background-image: url(images/portfolio-2.webp);"></a>
+                        <div class="blog-text">
+                            <span class="posted_on">Jul. 3rd 2024</span>
+                            <h3><a
+                                    href="https://medium.com/@hyounas0026/datas-extraordinary-impact-and-influence-d1a1d1f46a90">Data’s
+                                    Extraordinary Impact and Influence</a></h3>
+                            <p>Massive increase in the availability of data, which has a deeper and more subtle impact
+                                on the field. The size of the dataset used to train a model matters far more than the
+                                choice of ML approach, as demonstrated by Microsoft's 2001 experiment and Google's 2006
+                                automated translation contest win.</p>
+                            <ul class="stuff">
+                                <li><i class="icon-heart2"></i>51</li>
+                                <li><i class="icon-eye2"></i>289</li>
+                                <li><a
+                                        href="https://medium.com/@hyounas0026/datas-extraordinary-impact-and-influence-d1a1d1f46a90">Read
+                                        More<i class="icon-arrow-right22"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="fh5co-blog animate-box">
+                        <a href="https://medium.com/@hyounas0026/no-free-lunch-in-machine-learning-why-one-algorithm-doesnt-fit-all-6aad79fbc191?source=user_profile---------0----------------------------"
+                            class="blog-bg" style="background-image: url(images/Lunch.webp);"></a>
+                        <div class="blog-text">
+                            <span class="posted_on">Aug. 31st, 2024</span>
+                            <h3><a
+                                    href="https://medium.com/@hyounas0026/no-free-lunch-in-machine-learning-why-one-algorithm-doesnt-fit-all-6aad79fbc191?source=user_profile---------0----------------------------">No
+                                    Free Lunch Theorem</a></h3>
+                            <p>In machine learning, no algorithm is universally best. The No Free Lunch Theorem shows
+                                why careful model selection and optimization are essential for success.</p>
+                            <ul class="stuff">
+                                <li><i class="icon-heart2"></i>24</li>
+                                <li><i class="icon-eye2"></i>300</li>
+                                <li><a
+                                        href="https://medium.com/@hyounas0026/no-free-lunch-in-machine-learning-why-one-algorithm-doesnt-fit-all-6aad79fbc191?source=user_profile---------0----------------------------">Read
+                                        More<i class="icon-arrow-right22"></i></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </div>
-</header>
+    </div>
 
-<div id="fh5co-about" class="animate-box">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-                <h2>About Me</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <ul class="info">
-                    <li><span class="first-block">Full Name:</span><span class="second-block">Hamza Younas</span></li>
-                    <li><span class="first-block">Address:</span><span class="second-block">Lahore, Punjab, Pakistan</span></li>
-                    <li><span class="first-block">Email:</span><span class="second-block">hamzayounas4009@gmail.com</span></li>
-                </ul>
-            </div>
-            <div class="col-md-8">
-                <h2>Hello There!</h2>
-                <p>As a Data Science and ML Engineer, I specialize in developing advanced machine learning models, focusing on computer vision projects. I excel in crafting efficient code for the ML pipeline, particularly in object detection and image classification. Rigorously assessing model performance with metrics like accuracy and precision ensures our solutions are effective and efficient.</p>
-                <p>In my role, I deploy ML models into production, ensuring seamless integration and scalability. I optimize inference speed and memory efficiency, adept at resolving performance bottlenecks to enhance system speed and resource utilization.</p>
-                <p>For my Final Year Project (FYP), I am specializing in a web-based project for pneumonia detection in chest X-rays using Convolutional Neural Networks (CNNs). I am leveraging CNN layers such as ResNet, VGG, Inception, and DenseNet to achieve the best prediction. I am currently working towards achieving significant diagnostic accuracy improvements. This project is allowing me to develop my deep learning skills in medical imaging and innovate in healthcare technology.</p>
-				</p>
-                <p>
-                    <ul class="fh5co-social-icons">
-                        <li><a href="https://www.linkedin.com/in/hamza-younas-5a0538244"><i class="icon-linkedin2"></i></a></li>
-                        <li><a href="https://github.com/hyounas865"><i class="icon-github2"></i></a></li>
-                        <li><a href="https://x.com/hyounas0026"><i class="icon-twitter2"></i></a></li>
-                        <li><a href="https://medium.com/@hyounas0026"><i class="fab fa-medium"></i></a></li>
-                    </ul>
+    <!-- ### contact
+            ================================================== -->
+    <section id="contact" class="s-contact target-section">
+
+        <div class="row contact-top">
+            <div class="column lg-12">
+                <h2 class="text-pretitle">
+                    Get In Touch
+                </h2>
+
+                <p class="h1">
+                    I love to hear from you.
+                    Whether you have a question or just
+                    want to chat about data science, tech & ai — shoot me a message.
                 </p>
             </div>
-        </div>
-    </div>
-</div>
+        </div> <!-- end contact-top -->
 
-<!-- ======= Certificate Section ======= -->
-<style>
-    /* General Styles */
-    #fh5co-certificates .section-title {
-        text-align: center;
-        margin-bottom: 80px; /* Reduced margin for better spacing on all devices */
-    }
-   
-    #fh5co-certificates .portfolio-item img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-        object-fit: contain;
-    }
+        <div class="row contact-bottom">
+            <div class="column lg-3 md-5 tab-6 stack-on-550 contact-block">
+                <h3 class="text-pretitle">Reach me at</h3>
+                <p class="contact-links">
+                    <a href="mailto:hamzayounas4009@gmail.com" class="mailtoui">hamzayounas4009@gmail.com</a> <br>
+                    <a href="tel:+1975432345">+923130478566</a>
+                </p>
+            </div>
+            <div class="column lg-4 md-5 tab-6 stack-on-550 contact-block">
+                <h3 class="text-pretitle">Social</h3>
+                <ul class="contact-social">
+                    <li><a href="https://github.com/hyounas865">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/hamza-younas-5a0538244">Linkedin</a></li>
+                    <li><a href="https://x.com/hyounas0026">Twitter</a></li>
+                    <li><a href="https://medium.com/@hyounas0026">Medium</a></li>
+                    <li><a href="https://www.instagram.com/hamzayounas001/">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="column lg-4 md-12 contact-block">
+                <a href="mailto:hamzayounas4009@gmail.com" class="mailtoui btn btn--medium u-fullwidth contact-btn">Say
+                    Hello.</a>
+            </div>
+        </div> <!-- end contact-bottom -->
 
-    #fh5co-certificates .portfolio-item {
-        margin-bottom: 20px; /* Reduced margin for better spacing */
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: auto; /* Allow height to adjust based on content */
-    }
+    </section> <!-- end contact -->
 
-    #fh5co-certificates .row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+    </main> <!-- end s-content -->
 
-    #fh5co-certificates .col-lg-4,
-    #fh5co-certificates .col-md-6 {
-        flex: 1 1 30%;
-        max-width: 30%;
-        box-sizing: border-box;
-        padding: 0 15px;
-        display: flex;
-        justify-content: center;
-    }
 
-    #fh5co-certificates .portfolio-item img:hover {
-        transform: scale(1.1);
-        transition: transform 0.3s ease;
-    }
+    <!-- ## footer
+        ================================================== -->
+    <footer class="s-footer">
 
-    /* Mobile Styles */
-    @media only screen and (max-width: 767px) {
-        #fh5co-certificates .section-title {
-            margin-bottom: 30px; /* Reduced margin for mobile */
-        }
-
-        #fh5co-certificates .col-lg-4,
-        #fh5co-certificates .col-md-6 {
-            flex: 1 1 45%; /* Adjust width to fit two items per row */
-            max-width: 45%;
-            padding: 0 10px; /* Reduced padding for mobile */
-        }
-        
-        #fh5co-certificates .portfolio-item {
-            height: auto; /* Allow height to adjust on mobile */
-        }
-    }
-</style>
-
-<section id="fh5co-certificates" class="portfolio section-bg">
-    <div class="container" data-aos="fade-up">
-        <div class="section-title">
-            <h1>Certificates</h1>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                <img src="./images/certificates/AWS-ZTU7LC8DOQ.jpeg" class="img-fluid" alt="">
+        <div class="row">
+            <div class="column ss-copyright">
+                <span>© Copyright Hamza Y. All Rights Reserved</span>
+                <span>Hamza Y Data Scientist<a href=""></a><a href=""></a></span>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                <img src="./images/certificates/Coursera 4JNUZNFQDNXK_page-0001.jpg" class="img-fluid" alt="">
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                <img src="./images/certificates/Coursera ZQR8YT93ZQ.png" class="img-fluid"  alt="">
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                <img src="./images/certificates/Coursera NH8L336SC8LD.jpg" class="img-fluid" alt="">
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                <img src="./images/certificates/Coursera YEELIJ7ZEMDO.jpg" class="img-fluid" alt="">
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                <img src="./images/certificates/Coursera ZQX3CZBKSKJQ.jpg" class="img-fluid" alt="">
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd">
+                        <path
+                            d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z" />
+                    </svg>
+                </a>
             </div>
         </div>
-    </div>
-</section>
-<!-- End Certificate Section -->
+
+    </footer> <!-- end s-footer -->
+
+    </div> <!-- end -s-pagewrap -->
 
 
-	<div id="fh5co-skills" class="animate-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Skills</h2>
-				</div>
-			</div>
-			<div class="row row-pb-md">
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="75"><span><strong>PYTHON</strong>75%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="55"><span><strong>SQL</strong>55%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="75"><span><strong>Tensorflow</strong>75%</span></div>
-				</div>
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/chart.js"></script>
 
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="79"><span><strong>Sci-kit Learn</strong>74%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="85"><span><strong>Pandas</strong>79%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="90"><span><strong>Numpy</strong>70%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="65"><span><strong>Hadoop</strong>65%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="74"><span><strong>Statistical Analysis</strong>74%</span></div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="progress-wrap">
-						<h3><span class="name-left">Python/R/SQL</span><span class="value-right">70%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">Pandas/Numpy</span><span class="value-right">74%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-2 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="74" aria-valuemin="0" aria-valuemax="100" style="width:74%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">Matplotlib/Seaborn</span><span class="value-right">80%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">Scikit-learn/Keras/Tensorflow</span><span class="value-right">70%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-4 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-						  </div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="progress-wrap">
-						<h3><span class="name-left">NLP/Computer vision</span><span class="value-right">75%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-5 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">AWS/Azure</span><span class="value-right">55%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-striped active" role="progressbar"
-						  aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width:55%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">Git/GitHub/Jupyter NB</span><span class="value-right">90%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">Soft Skills</span><span class="value-right">85%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
-						  </div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <script>
+        $(document).ready(function () {
+            var pieChart = function () {
+                $('.chart').easyPieChart({
+                    scaleColor: false,
+                    lineWidth: 4,
+                    lineCap: 'butt',
+                    barColor: '#FF9000',
+                    trackColor: "#f5f5f5",
+                    size: 160,
+                    animate: 1000
+                });
+            };
 
-	<div id="fh5co-work" class="fh5co-bg-dark">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Projects</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="images/BLOG1.pdf" class="work" style="background-image: url('images/image1-02.webp');">
-						<div class="desc">
-							<h3>Enhancing Customer Retention</h3>
-							<span>CLICK HERE</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url('images/XRAY.webp');">
-						<div class="desc">
-							<h3>FYP-Pneumonia Detection Using Deep Learning</h3>
-							<span>Under Development</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="images/Sentiment analysis.pdf" class="work" style="background-image: url('images/image4.webp');">
-						<div class="desc">
-							<h3>Emotion Tweet Classifier</h3>
-							<span>CLICK HERE</span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="#" class="work" style="background-image: url(images/price-est.webp);">
-						<div class="desc">
-							<h3>California House Price Estimation</h3>
-							<span>CLICK HERE</span>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
+            // Call the pieChart function after the document is ready
+            pieChart();
+        });
+    </script>
 
-	<div id="fh5co-blog">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Post on Medium</h2>
-					<p>Join me as I explore and explain the world of AI and machine learning through my articles. Here are some of my recent posts for you to enjoy:</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="https://medium.com/@hyounas0026/pandas-on-a-diet-lossless-compression-techniques-for-dataframes-bcc9db87fbcb" class="blog-bg" style="background-image: url(images/portfolio-1.webp);"></a>
-						<div class="blog-text">
-							<span class="posted_on">Jul. 28th 2024</span>
-							<h3><a href="https://medium.com/@hyounas0026/pandas-on-a-diet-lossless-compression-techniques-for-dataframes-bcc9db87fbcb">Pandas on a Diet: Lossless Compression Techniques for DataFrames</a></h3>
-							<p>The compression conundrum how to shrink your DataFrames without sacrificing data quality.</p>
-							<ul class="stuff">
-								<li><i class="icon-heart2"></i>73</li>
-								<li><i class="icon-eye2"></i>308</li>
-								<li><a href="https://medium.com/@hyounas0026/pandas-on-a-diet-lossless-compression-techniques-for-dataframes-bcc9db87fbcb">Read More<i class="icon-arrow-right22"></i></a></li>
-							</ul>
-						</div> 
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="https://medium.com/@hyounas0026/datas-extraordinary-impact-and-influence-d1a1d1f46a90" class="blog-bg" style="background-image: url(images/portfolio-2.webp);"></a>
-						<div class="blog-text">
-							<span class="posted_on">Jul. 3rd 2024</span>
-							<h3><a href="https://medium.com/@hyounas0026/datas-extraordinary-impact-and-influence-d1a1d1f46a90">Data’s Extraordinary Impact and Influence</a></h3>
-							<p>Massive increase in the availability of data, which has a deeper and more subtle impact on the field. The size of the dataset used to train a model matters far more than the choice of ML approach, as demonstrated by Microsoft's 2001 experiment and Google's 2006 automated translation contest win.</p>
-							<ul class="stuff">
-								<li><i class="icon-heart2"></i>51</li>
-								<li><i class="icon-eye2"></i>289</li>
-								<li><a href="https://medium.com/@hyounas0026/datas-extraordinary-impact-and-influence-d1a1d1f46a90">Read More<i class="icon-arrow-right22"></i></a></li>
-							</ul>
-						</div> 
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="https://medium.com/@hyounas0026/no-free-lunch-in-machine-learning-why-one-algorithm-doesnt-fit-all-6aad79fbc191?source=user_profile---------0----------------------------" class="blog-bg" style="background-image: url(images/Lunch.webp);"></a>
-						<div class="blog-text">
-							<span class="posted_on">Aug. 31st, 2024</span>
-							<h3><a href="https://medium.com/@hyounas0026/no-free-lunch-in-machine-learning-why-one-algorithm-doesnt-fit-all-6aad79fbc191?source=user_profile---------0----------------------------">No Free Lunch Theorem</a></h3>
-							<p>In machine learning, no algorithm is universally best. The No Free Lunch Theorem shows why careful model selection and optimization are essential for success.</p>
-							<ul class="stuff">
-								<li><i class="icon-heart2"></i>24</li>
-								<li><i class="icon-eye2"></i>300</li>
-								<li><a href="https://medium.com/@hyounas0026/no-free-lunch-in-machine-learning-why-one-algorithm-doesnt-fit-all-6aad79fbc191?source=user_profile---------0----------------------------">Read More<i class="icon-arrow-right22"></i></a></li>
-							</ul>
-						</div> 
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>		
-	<div id="fh5co-started" class="fh5co-bg-dark">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Download my Resume!</h2>
-					<p>
-						<a href="https://hyounas865.github.io/images/Resume.pdf" download="Resume.pdf" class="btn btn-default btn-lg">
-							Resume <i class="fas fa-download"></i>
-						</a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>	
-	<div id="fh5co-consult">
-		<div class="video fh5co-video" style="background-image: url(images/cover_bg_1.webp);">
-			<div class="overlay"></div>
-		</div>
-		<div class="choose animate-box">
-			<h2>Contact</h2>
-			<form action="#">
-				<div class="row form-group">
-					<div class="col-md-6">
-						<input type="text" id="fname" class="form-control" placeholder="Your firstname">
-					</div>
-				</div>
-				<div class="row form-group">
-					<div class="col-md-6">
-						<input type="text" id="lname" class="form-control" placeholder="Your lastname">
-					</div>
-				</div>
+</body>
 
-				<div class="row form-group">
-					<div class="col-md-12">
-						<input type="text" id="email" class="form-control" placeholder="Your email address">
-					</div>
-				</div>
-
-				<div class="row form-group">
-					<div class="col-md-12">
-						<input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
-					</div>
-				</div>
-
-				<div class="row form-group">
-					<div class="col-md-12">
-						<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
-					</div>
-				</div>
-				<div class="form-group">
-					<input type="submit" value="Send Message" class="btn btn-primary">
-				</div>
-
-			</form>	
-		</div>
-	</div>
-	
-	<style>
-		/* Match font styles and other properties to your portfolio */
-		#fh5co-footer {
-			text-align: center;
-			padding: 30px; /* Adjust padding as needed */
-			background-color: #f8f9fa; /* Background color to match your portfolio */
-			font-family: 'Your Font Family', sans-serif; /* Replace with the actual font family */
-			color: #333; /* Adjust text color to match your design */
-		}
-		#fh5co-footer .name {
-			font-weight: bold;
-			font-size: 28px; /* Larger font size for the name */
-		}
-		#fh5co-footer .title {
-			font-size: 18px; /* Font size for the title below the name */
-			margin-top: 5px; /* Space between the name and title */
-		}
-		#fh5co-footer .copyright {
-			font-size: 16px; /* Font size for the copyright text */
-			margin-top: 10px; /* Space between the title and copyright text */
-		}
-		
-	</style>
-	
-	<!-- New Footer HTML -->
-	<div id="fh5co-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="name">Hamza Y</div>
-					<div class="title">Data Scientist</div>
-					<div class="copyright"> © Copyright <span class="bold">Hamza Y</span>. All Rights Reserved
-					<div>Designed by BootstrapMade</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
-	</div>
-	
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Easy PieChart -->
-	<script src="js/jquery.easypiechart.min.js"></script>
-	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-	<script src="js/google_map.js"></script>
-	
-	<!-- Main -->
-	<script src="js/main.js"></script>
-
-	</body>
 </html>
-
