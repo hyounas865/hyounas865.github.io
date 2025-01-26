@@ -3397,7 +3397,7 @@ img.u-pull-left {
 
 .s-about {
     padding-top    : var(--vspace-4);
-    padding-bottom : var(--vspace-3);
+    padding-bottom : 5.5rem; 
 }
 
 /* --------------------------------------------------------------------
@@ -3433,7 +3433,7 @@ img.u-pull-left {
  * ## about expertise
  * -------------------------------------------------------------------- */
 .about-expertise {
-    padding-top : calc(6 * var(--space));
+/* padding-top : calc(4 * var(--space)); */
 }
 
 .about-expertise .skills-list {
@@ -4327,4 +4327,7 @@ img.u-pull-left {
         grid-template-columns: 1fr; /* Single column layout */
         gap: 10px; /* Further reduce spacing */
     }
+}
+.ex{
+    padding-top: 12.5rem;
 }
